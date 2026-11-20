@@ -1,46 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Palanquin:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  line-height: 120%;
 }
 
 html,
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 
 .header-wrapper {
   background-color: #e76c1f;
-  width: 100%;
   justify-content: space-between;
 }
 header {
   display: flex;
   height: 128px;
-  width: 1440px;
+  width: 100%;
+  gap: 700px;
   align-items: center;
-  padding-left: 240px;
-  padding-right: 240px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
+
 .img-bestellApp {
-  width: 92px;
   height: 38px;
   gap: 4px;
+  padding-right: 120px;
+}
+.heroe-section-content {
+  display: flex;
+  flex-direction: column;
+}
+.landing-section {
+  background-position: center;
+  height: 508px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.img-pub {
+  width: 100%;
+  height: 508px;
+}
+.sublanding-section {
+  transform: translateY(-140px);
+  width: 200px;
+  height: 200px;
+}
+.burger-icon {
+  border-radius: 20px;
+}
+.restaurant-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-110px);
+}
+.restaurant-wrapper-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+}
+.span-burger {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  color: #e76c1f;
+}
+.h1 h1 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  color: black;
+}
+.h3 h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  color: #363534;
+}
+.restaurant-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.span-quote {
+  color: #363534;
+}
+.h5 h5 {
+  font-size: 1rem;
+  color: #726d6d;
+  margin-bottom: 0;
 }
 .footer-wrapper {
   background-color: #e76c1f;
   width: 100%;
-  justify-content: space-between;
 }
 
 footer {
   display: flex;
   height: 128px;
-  width: 1440px;
   align-items: center;
-  padding-left: 360px;
-  padding-right: 360px;
+  justify-items: center;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 .logo-copyright-name {
   display: flex;
@@ -49,8 +124,8 @@ footer {
   justify-items: center;
   align-self: center;
   gap: 4px;
-  width: 180px;
-  height: 24px;
+  max-width: 180px;
+  max-height: 24px;
 }
 
 .footer-content {

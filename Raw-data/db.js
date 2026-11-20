@@ -109,4 +109,4 @@ const Salad =
 
 
 let allDishes = [burger_sandwiches, pizza_30cm, Salad];
-console.log(allDishes.length);
+//console.log(allDishes.length); // 3

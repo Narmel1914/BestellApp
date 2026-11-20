@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header-wrapper {
+  background-color: #e76c1f;
+  width: 100%;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  height: 128px;
+  width: 1440px;
+  align-items: center;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+.img-bestellApp {
+  width: 92px;
+  height: 38px;
+  gap: 4px;
+}
+.footer-wrapper {
+  background-color: #e76c1f;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  height: 128px;
+  width: 1440px;
+  align-items: center;
+  padding-left: 360px;
+  padding-right: 360px;
+}
+.logo-copyright-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  gap: 4px;
+  width: 180px;
+  height: 24px;
+}
+
+.footer-content {
+  width: 531px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+  align-items: center;
+  justify-items: center;
+}
+
+logo-copyright {
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 2px;
+  display: flex;
+}
+h6 {
+  color: #ffffff;
+  margin-bottom: 0.1rem;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h6 {
+}

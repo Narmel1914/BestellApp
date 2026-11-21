@@ -7,6 +7,7 @@
   width: 713px;
   height: 612px;
   gap: 8px;
+  margin-top: 10px;
 }
 
 .single-menu-pizza {
@@ -14,8 +15,12 @@
   display: flex;
   flex-direction: row;
   height: 141px;
-  width: 713px;
+  width: 715px;
   border-radius: 5px;
+  align-items: center;
+  align-content: space-between;
+
+  gap: 10px;
 }
 
 .price-addOrder {

@@ -5,16 +5,17 @@ function renderBlackBurgerTemplate(ArrObj, index) {
                 <img src="${ArrObj.image}" alt="burger">
                   </div>
             <div class="title-content-burger">
-                <h3 id="name-burger"> ${ArrObj.name}</h3>
+                <h4 id="name-burger"> ${ArrObj.name}</h4>
                 <h6 id="burger-description">${ArrObj.description}</h6>
             </div>
+            <div id="amount-order-pizza" class="amount-burger">${ArrObj.amount}</div>
             <div class="price-addOrder">
-                <div id="price">${ArrObj.price}</div>
+            <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
             <div class="add-choice">
-                    <button  id="btn-add" type="button" class="btn-icon theme-danger btn-solid btn-styled" aria-label="Icon only" onclick="getOrder()">
-                        <svg class="bi" width="16" height="16" aria-hidden="true">
-                            <use href="#plus-lg" />
-                        </svg>
+                    <button id="btn-add-burger-${index}" type="button" class="btn-icon btn-lg rounded-pill" aria-label="Add burger" onclick="getOrderBurger(${index})">
+                       
+                        <i class="bi-plus-lg" aria-hidden="true"></i>
+                       
                     </button>
                 </div>
             </div> 
@@ -29,16 +30,17 @@ function renderPizzaTemplate(ArrObj, index) {
                 <img src="${ArrObj.image}" alt="pizza">
             </div>
             <div class="title-content-pizza">
-                <h3 id="name-pizza"> ${ArrObj.name}</h3>
+                <h4 id="name-pizza"> ${ArrObj.name}</h4>
                 <h6 id="pizza-description">${ArrObj.description}</h6>
             </div>
+             <div id="amount-order-pizza" class="amount-pizza">${ArrObj.amount}</div>
             <div class="price-addOrder">
-                <div id="price">${ArrObj.price}</div>
+                <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
             <div class="add-choice">
-                    <button  id="btn-add" type="button" class="btn-icon theme-danger btn-solid btn-styled" aria-label="Icon only" onclick="getOrder()">
-                        <svg class="bi" width="16" height="16" aria-hidden="true">
-                            <use href="#plus-lg" />
-                        </svg>
+                    <button  id="btn-add-pizza-${index}" type="button"  class="btn-icon btn-lg rounded-pill" aria-label="Add pizza" onclick="getOrderPizza(${index})">
+                       
+                        <i class="bi bi-plus-lg" aria-hidden="true"></i>
+                       
                     </button>
                 </div>
             </div> 
@@ -53,21 +55,21 @@ function renderSaladTemplate(ArrObj, index) {
                 <img src="${ArrObj.image}" alt="salad">
             </div>
             <div class="title-content-salad">
-                <h3 id="name-salad"> ${ArrObj.name}</h3>
+                <h4 id="name-salad"> ${ArrObj.name}</h4>
                 <h6 id="salad-description">${ArrObj.description}</h6>
             </div>
+            <div id="amount-order-salad" class="amount-salad">${ArrObj.amount}</div>
             <div class="price-addOrder">
-                <div id="price">${ArrObj.price}</div>
+                <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
             <div class="add-choice">
-                    <button  id="btn-add" type="button" class="btn-icon theme-danger btn-solid btn-styled" aria-label="Icon only" onclick="getOrder()">
-                        <svg class="bi" width="16" height="16" aria-hidden="true">
-                            <use href="#plus-lg" />
-                        </svg>
+                    <button  id="btn-add-salad-${index}" type="button" class="btn-icon btn-lg rounded-pill" aria-label="Add Salad" onclick="getOrderSalad(${index})">
+                      
+                        <i  class="bi bi-plus-lg" aria-hidden="true"></i>
+                  
                     </button>
                 </div>
             </div> 
         </div>
     `;
 }
-
 

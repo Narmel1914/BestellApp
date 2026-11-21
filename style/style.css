@@ -5,7 +5,6 @@
   margin: 0 auto;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  line-height: 120%;
 }
 
 html,
@@ -20,7 +19,7 @@ body {
 }
 header {
   display: flex;
-  height: 128px;
+  height: 64px;
   width: 100%;
   gap: 700px;
   align-items: center;
@@ -90,6 +89,7 @@ header {
   font-style: Bold;
   font-size: 24px;
   color: #363534;
+  text-align: left;
 }
 .restaurant-rating {
   display: flex;
@@ -112,6 +112,8 @@ header {
 .burger-categorie {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-items: center;
   gap: 10px;
   background-color: #e76c1f;
   height: 60px;
@@ -133,8 +135,39 @@ header {
 }
 .img-burger-categorie {
   width: 70px;
-  height: 81px;
+  height: 61px;
 }
+
+button .btn-icon {
+  cursor: pointer;
+  color: red;
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+}
+/*
+
+.btn-icon {
+  fill: red;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.bi-plus-lg {
+  color: red;
+  font-size: 24px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
 footer {
   display: flex;
   height: 128px;

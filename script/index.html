@@ -19,6 +19,7 @@
     <script src="../Raw-data/db.js" defer></script>
     <script src="../script/template/cardviewtemplate.js" defer></script>
     <script src="../script/loadcardview.js" defer></script>
+    <script src="../script/template/cardviewbaskettemplate.js" defer></script>
     <title>BestellApp</title>
   </head>
   <header class="header-wrapper">
@@ -69,20 +70,24 @@
             </div>
           </div>
           <div class="restaurant-description">
-            <h3>
+            <h4>
               The best of Burgers, Pizza, and Greens, all in one great place
-            </h3>
+            </h4>
           </div>
         </div>
       </section>
       <section class="menu-catalogue">
         <div class="burger-categorie">
-          <img
-            class="img-burger-categorie"
-            src="../assets/icons/Chanese.png"
-            alt=""
-          />
-          <h2>Burger & Sandwiches</h2>
+          <div class="img-cat1">
+            <img
+              class="img-burger-categorie"
+              src="../assets/icons/Chanese.png"
+              alt=""
+            />
+          </div>
+          <div class="burger">
+            <h3>Burger & Sandwiches</h3>
+          </div>
         </div>
 
         <div id="menu-burger" class="burger-sandwiche"></div>
@@ -93,7 +98,7 @@
             src="../assets/icons/Pizza1.png"
             alt=""
           />
-          <h2>Pizza (30cm)</h2>
+          <h3>Pizza (30cm)</h3>
         </div>
 
         <div id="menu-pizza" class="pizza_30cm"></div>
@@ -104,7 +109,7 @@
             src="../assets/icons/Salad1.png"
             alt=""
           />
-          <h2>Salad</h2>
+          <h3>Salad</h3>
         </div>
         <div id="menu-salad" class="salad"></div>
       </section>

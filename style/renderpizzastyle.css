@@ -1,0 +1,38 @@
+.pizza_30cm {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-self: center;
+  align-items: flex-start;
+  width: 713px;
+  height: 612px;
+  gap: 8px;
+}
+
+.single-menu-pizza {
+  background-color: #fdeadc;
+  display: flex;
+  flex-direction: row;
+  height: 141px;
+  width: 713px;
+  border-radius: 5px;
+}
+
+.price-addOrder {
+  background-color: #fdeadc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.h2 h2 {
+  font-family: "Palanquin", sans-serif;
+  font-style: Bold;
+  font-size: 20px;
+  color: #363534;
+}
+.h6 h6 {
+  font-family: "Palanquin", sans-serif;
+  color: #363534;
+  font-size: 16px;
+}

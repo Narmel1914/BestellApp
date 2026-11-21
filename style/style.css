@@ -26,6 +26,7 @@ header {
   align-items: center;
   padding-left: 120px;
   padding-right: 120px;
+  position: fixed;
 }
 
 .img-bestellApp {
@@ -108,7 +109,32 @@ header {
   background-color: #e76c1f;
   width: 100%;
 }
+.burger-categorie {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #e76c1f;
+  height: 60px;
+}
 
+.pizza-categorie {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #e76c1f;
+  height: 60px;
+}
+.salad-categorie {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: #e76c1f;
+  height: 60px;
+}
+.img-burger-categorie {
+  width: 70px;
+  height: 81px;
+}
 footer {
   display: flex;
   height: 128px;
@@ -144,11 +170,4 @@ logo-copyright {
   top: 2px;
   left: 2px;
   display: flex;
-}
-h6 {
-  color: #ffffff;
-  margin-bottom: 0.1rem;
-  margin-top: 0;
-  font-weight: 500;
-  line-height: 1.2;
 }

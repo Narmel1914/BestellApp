@@ -109,6 +109,8 @@ const Salad =
 
 
 let arrDishes = [burger_sandwiches, pizza_30cm, Salad]; // array object of Json
+
+
 //console.log(arrDishes[0]); // 3
 /* test
 for (let i = 2; i < arrDishes.length; i++) {
@@ -117,5 +119,6 @@ for (let i = 2; i < arrDishes.length; i++) {
         const elt = categorie[j];
         console.log(elt.name);
         console.log(elt.image);
+        console.log(elt.amount + 2);
     }
 }*/

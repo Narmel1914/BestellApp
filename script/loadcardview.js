@@ -9,9 +9,10 @@ function creatCarviewBurger(obj) {
             const elt = categorie[j];
             const catalogue = document.getElementById("menu-burger");
             catalogue.innerHTML += /*html*/ `
-                        ${renderBlackBurgerTemplate(elt)}
+                        ${renderBlackBurgerTemplate(elt, j)}
                         
             `;
+
         }
     }
 
@@ -29,7 +30,7 @@ function creatCarviewPizza(obj) {
             const catalogue = document.getElementById("menu-pizza");
             catalogue.innerHTML += /*html*/ `
                        
-                        ${renderPizzaTemplate(elt)}
+                        ${renderPizzaTemplate(elt, j)}
                          
             `;
         }
@@ -49,7 +50,7 @@ function creatCarviewSalad(obj) {
             const catalogue = document.getElementById("menu-salad");
             catalogue.innerHTML += /*html*/ `
                        
-                        ${renderSaladTemplate(elt)}
+                        ${renderSaladTemplate(elt, j)}
                          
             `;
         }

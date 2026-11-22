@@ -7,8 +7,10 @@ function renderBlackBurgerTemplate(ArrObj, index) {
             <div class="title-content-burger">
                 <h4 id="name-burger"> ${ArrObj.name}</h4>
                 <h6 id="burger-description">${ArrObj.description}</h6>
+
+                <div id="amount-order-burger-${index}" class="amount-burger">Amount: ${ArrObj.amount}</div>
             </div>
-            <div id="amount-order-pizza" class="amount-burger">${ArrObj.amount}</div>
+          
             <div class="price-addOrder">
             <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
             <div class="add-choice">
@@ -32,15 +34,14 @@ function renderPizzaTemplate(ArrObj, index) {
             <div class="title-content-pizza">
                 <h4 id="name-pizza"> ${ArrObj.name}</h4>
                 <h6 id="pizza-description">${ArrObj.description}</h6>
+                <div id="amount-order-pizza-${index}" class="amount-pizza">Amount: ${ArrObj.amount}</div>
             </div>
-             <div id="amount-order-pizza" class="amount-pizza">${ArrObj.amount}</div>
+             
             <div class="price-addOrder">
                 <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
             <div class="add-choice">
-                    <button  id="btn-add-pizza-${index}" type="button"  class="btn-icon btn-lg rounded-pill" aria-label="Add pizza" onclick="getOrderPizza(${index})">
-                       
+                    <button  id="btn-add-pizza-${index}" type="button"  class="btn-icon btn-lg rounded-pill" aria-label="Add pizza" onclick="getOrderPizza( ${index})">
                         <i class="bi bi-plus-lg" aria-hidden="true"></i>
-                       
                     </button>
                 </div>
             </div> 
@@ -57,8 +58,9 @@ function renderSaladTemplate(ArrObj, index) {
             <div class="title-content-salad">
                 <h4 id="name-salad"> ${ArrObj.name}</h4>
                 <h6 id="salad-description">${ArrObj.description}</h6>
+                <div id="amount-order-salad-${index}" class="amount-salad">${ArrObj.amount}</div>
             </div>
-            <div id="amount-order-salad" class="amount-salad">${ArrObj.amount}</div>
+  
             <div class="price-addOrder">
                 <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
             <div class="add-choice">
@@ -72,4 +74,3 @@ function renderSaladTemplate(ArrObj, index) {
         </div>
     `;
 }
-

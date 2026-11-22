@@ -1,0 +1,21 @@
+.basket-content {
+  display: flex;
+  border: 1px solid #363534;
+  background-color: #363534;
+  width: 435px;
+  height: 794px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.title-your-basket {
+  display: flex;
+  color: white;
+  margin-top: 20px;
+}
+.title-your-basket > h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 120%;
+}

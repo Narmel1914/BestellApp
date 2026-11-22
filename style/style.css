@@ -40,6 +40,7 @@ header {
 .landing-section {
   background-position: center;
   height: 508px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -105,10 +106,13 @@ header {
   color: #726d6d;
   margin-bottom: 0;
 }
-.footer-wrapper {
-  background-color: #e76c1f;
-  width: 100%;
+
+.menu-basket-wrapper {
+  display: flex;
+  border: 2px solid black;
+  max-width: 1440px;
 }
+
 .burger-categorie {
   display: flex;
   flex-direction: row;
@@ -117,6 +121,14 @@ header {
   gap: 10px;
   background-color: #e76c1f;
   height: 60px;
+}
+.burger {
+  color: white;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  text-align: left;
 }
 
 .pizza-categorie {
@@ -167,10 +179,13 @@ button .btn-icon {
   justify-content: center;
 }
 */
-
+.footer-wrapper {
+  background-color: #e76c1f;
+  width: 100%;
+}
 footer {
   display: flex;
-  height: 128px;
+  height: 64px;
   align-items: center;
   justify-items: center;
   padding-left: 120px;

@@ -112,6 +112,11 @@ header {
   border: 2px solid black;
   max-width: 1440px;
 }
+.all-oder-into-basket {
+  width: 340px;
+  height: 355px;
+  gap: 10px;
+}
 
 .burger-categorie {
   display: flex;
@@ -123,6 +128,15 @@ header {
   height: 60px;
 }
 .burger {
+  color: white;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  text-align: left;
+}
+
+.pizza {
   color: white;
   font-family: "Palanquin", sans-serif;
   font-weight: 700;
@@ -147,7 +161,14 @@ header {
 }
 .img-burger-categorie {
   width: 70px;
-  height: 61px;
+  height: 81px;
+  transform: translateY(-9px);
+}
+
+.img-pizza-categorie {
+  width: 70px;
+  height: 81px;
+  transform: translateY(-10px);
 }
 
 button .btn-icon {

@@ -9,7 +9,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+/*
+#empty-basket-text-display {
+  display: none;
+}
+*/
 .single-menu-burger {
   background-color: #fdeadc;
   display: flex;

@@ -1,13 +1,13 @@
 .pizza_30cm {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  align-self: center;
+
   align-items: flex-start;
   width: 713px;
   height: 612px;
   gap: 8px;
   margin-top: 10px;
+  transform: translateX(-100px);
 }
 
 .single-menu-pizza {

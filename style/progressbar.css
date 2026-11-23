@@ -1,0 +1,26 @@
+.all-oder-into-basket {
+  --sb-track-color: #363534;
+  --sb-thumb-color: #fdeadc;
+  --sb-size: 8px;
+}
+
+.all-oder-into-basket::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: 10px;
+}
+
+.all-oder-into-basket::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 5px;
+}
+
+.all-oder-into-basket::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 5px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}

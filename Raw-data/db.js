@@ -6,7 +6,7 @@ const burger_sandwiches =
             price: 16.9,
             description: "Mixed green salad,Tomatoes,Edemame,Mushrooms",
             amount: 0,
-            image: "../assets/img/VeggieBlackBurger.png",
+            image: "../assets/img/VeggieBlackBurger.png"
         },
 
         {
@@ -14,7 +14,7 @@ const burger_sandwiches =
             price: 15.9,
             description: "Beef,Bacon,Dill pickels,Smoked cheese, Ketchup, BBQ souse",
             amount: 0,
-            image: "../assets/img/Allmeatburger.png",
+            image: "../assets/img/Allmeatburger.png"
         },
 
         {
@@ -22,7 +22,7 @@ const burger_sandwiches =
             price: 14.9,
             description: "Beef,Cheese,Tomatoes,Lettuce,Onion",
             amount: 0,
-            image: "../assets/img/Beefredburger.png",
+            image: "../assets/img/Beefredburger.png"
         },
 
         {
@@ -30,7 +30,7 @@ const burger_sandwiches =
             price: 15.9,
             description: "Chicken,Cheese,Tomatoes,Lettuce,Onion,Bell,pepper",
             amount: 0,
-            image: "../assets/img/VeggieBlackBurger.png",
+            image: "../assets/img/Bigchickenburger.png"
         },
     ];
 
@@ -65,7 +65,7 @@ const pizza_30cm =
             price: 15.9,
             description: "Chicken,Mozzarella,Gorgonzola,Fonina,Pamigiano Reggeiano",
             amount: 0,
-            image: "../assets/img/VeggieBlackBurger.png",
+            image: "../assets/img/QuattroformaggiwithChicken.png",
         },
     ];
 
@@ -113,7 +113,7 @@ let arrDishes = [burger_sandwiches, pizza_30cm, Salad]; // array object of Json
 
 //console.log(arrDishes[0]); // 3
 /* test
-for (let i = 2; i < arrDishes.length; i++) {
+for (let i = 1; i < arrDishes.length - 1; i++) {
     let categorie = arrDishes[i];
     for (let j = 0; j < categorie.length; j++) {
         const elt = categorie[j];
@@ -121,4 +121,4 @@ for (let i = 2; i < arrDishes.length; i++) {
         console.log(elt.image);
         console.log(elt.amount + 2);
     }
-}*/
+} */

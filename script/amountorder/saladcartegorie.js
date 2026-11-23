@@ -9,22 +9,22 @@ function getOrderSalad(index) {
             warm_amount += 1;
             let warm_salad = document.getElementById("amount-order-salad-" + index);
             warm_salad.innerHTML = /*html*/ `
-                       Amount: ${warm_amount} `; break;
+                     ${warm_amount} `; break;
         case 1:
             green_amount += 1;
             let green_salad = document.getElementById("amount-order-salad-" + index);
             green_salad.innerHTML = /*html*/ `
-                       Amount: ${green_amount} `; break;
+                     ${green_amount} `; break;
         case 2:
             food_amount += 1;
             let food_salad = document.getElementById("amount-order-salad-" + index);
             food_salad.innerHTML = /*html*/ `
-                       Amount: ${food_amount} `; break;
+                        ${food_amount} `; break;
         case 3:
             tofu_amount += 1;
             let tofu_salad = document.getElementById("amount-order-salad-" + index);
             tofu_salad.innerHTML = /*html*/ `
-                       Amount: ${tofu_amount} `; break;
+                     ${tofu_amount} `; break;
     }
 
 }

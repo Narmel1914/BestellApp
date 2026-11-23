@@ -6,16 +6,97 @@
   height: 794px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
 }
 .title-your-basket {
   display: flex;
   color: white;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .title-your-basket > h3 {
   font-family: "Palanquin", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 32px;
-  line-height: 120%;
+}
+.burger-categorie-basket {
+  /*width: 340px;
+  height: 129px;*/
+  gap: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  /*padding: 20px;*/
+  background-color: #fdeadc;
+  display: flex;
+  flex-direction: column;
+}
+.title-content-burger-to-basket {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(-30px);
+  gap: 3px;
+}
+
+.basket-burger > h4 {
+  font-size: 16px;
+  text-align: center;
+}
+.oder-into-basket {
+  background-color: #fdeadc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.empty-basket-text {
+  width: 387px;
+  height: 294px;
+  display: flex; /* when choice is start display: none*/
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-empty {
+  font-family: "Palanquin", sans-serif;
+  font-size: 24px;
+  color: white;
+  text-align: justify;
+}
+.text-empty > h5 {
+  text-align: center;
+}
+.empty-cat {
+  width: 128px;
+  height: 129px;
+  top: 165px;
+  left: 130px;
+  border-radius: 5px;
+}
+
+.menu-pizza-wrapper {
+  display: flex;
+  border: 2px solid black;
+  max-width: 1440px;
+}
+.pizza-categorie-basket {
+  /*width: 340px;
+  height: 129px;*/
+  gap: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  /*padding: 20px;*/
+  background-color: #fdeadc;
+  display: flex;
+  flex-direction: column;
+}
+.title-content-pizza-to-basket {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(-30px);
+  gap: 3px;
+}
+
+.pizza-basket > h4 {
+  font-size: 16px;
+  text-align: center;
 }

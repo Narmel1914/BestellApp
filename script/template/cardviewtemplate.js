@@ -1,4 +1,4 @@
-function renderBlackBurgerTemplate(ArrObj, index) {
+function renderBurgerTemplate(ArrObj, index) {
     return /*html*/ `
         <div class="single-menu-burger"> 
             <div id="show-img-choice-${index}" class="img-order">
@@ -8,7 +8,7 @@ function renderBlackBurgerTemplate(ArrObj, index) {
                 <h4 id="name-burger"> ${ArrObj.name}</h4>
                 <h6 id="burger-description">${ArrObj.description}</h6>
 
-                <div id="amount-order-burger-${index}" class="amount-burger"> ${ArrObj.amount}</div>
+                <!--<div id="amount-order-burger-${index}" class="amount-burger"> ${ArrObj.amount}</div>-->
             </div>
           
             <div class="price-addOrder">
@@ -34,7 +34,7 @@ function renderPizzaTemplate(ArrObj, index) {
             <div class="title-content-pizza">
                 <h4 id="name-pizza"> ${ArrObj.name}</h4>
                 <h6 id="pizza-description">${ArrObj.description}</h6>
-                <div id="amount-order-pizza-${index}" class="amount-pizza"> ${ArrObj.amount}</div>
+              <!--  <div id="amount-order-pizza-${index}" class="amount-pizza"> ${ArrObj.amount}</div>-->
             </div>
              
             <div class="price-addOrder">
@@ -58,7 +58,7 @@ function renderSaladTemplate(ArrObj, index) {
             <div class="title-content-salad">
                 <h4 id="name-salad"> ${ArrObj.name}</h4>
                 <h6 id="salad-description">${ArrObj.description}</h6>
-                <div id="amount-order-salad-${index}" class="amount-salad">${ArrObj.amount}</div>
+                <!--<div id="amount-order-salad-${index}" class="amount-salad">${ArrObj.amount}</div>-->
             </div>
   
             <div class="price-addOrder">

@@ -7,25 +7,35 @@ function getOrderPizza(index) {
 
     switch (index) {
         case 0:
+            document.getElementById('empty-basket-text-display').style.display = 'none';
+            getMagherittatoBasket(index);
             margheritta_amount += 1;
-            let margheritta_pizza = document.getElementById("amount-order-pizza-" + index);
+            let margheritta_pizza = document.getElementById("amount-order-pizza-to-basket-" + index);
             margheritta_pizza.innerHTML = /*html*/ `
-                       Amount: ${margheritta_amount} `; break;
+                     ${margheritta_amount} `;
+            break;
         case 1:
+            document.getElementById('empty-basket-text-display').style.display = 'none';
+            getChorizotoBasket(index);
             chorizo_amount += 1;
-            let chorizo_pizza = document.getElementById("amount-order-pizza-" + index);
+            let chorizo_pizza = document.getElementById("amount-order-pizza-to-basket-" + index);
             chorizo_pizza.innerHTML = /*html*/ `
-                       Amount: ${chorizo_amount} `; break;
+                     ${chorizo_amount} `; break;
         case 2:
+
+            document.getElementById('empty-basket-text-display').style.display = 'none';
+            getFunghitoBasket(index);
             funghi_amount += 1;
-            let funghi_pizza = document.getElementById("amount-order-pizza-" + index);
+            let funghi_pizza = document.getElementById("amount-order-pizza-to-basket-" + index);
             funghi_pizza.innerHTML = /*html*/ `
-                       Amount: ${funghi_amount} `; break;
+                     ${funghi_amount} `; break;
         case 3:
+            document.getElementById('empty-basket-text-display').style.display = 'none';
+            getQuattrotoBasket(index);
             quattro_amount += 1;
-            let quattro_pizza = document.getElementById("amount-order-pizza-" + index);
+            let quattro_pizza = document.getElementById("amount-order-pizza-to-basket-" + index);
             quattro_pizza.innerHTML = /*html*/ `
-                       Amount: ${quattro_amount} `; break;
+                    ${quattro_amount} `; break;
     }
 
 }

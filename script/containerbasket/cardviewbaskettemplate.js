@@ -169,3 +169,90 @@ function renderQuattroWarenkorb(ArrObj, index) {
         </div>
     `;
 }
+
+
+/* Salad */
+
+function renderWarmBeeWarenkorb(ArrObj, index) {
+    return /*html*/ `
+        <div class="salad-categorie-basket"> 
+            <div class="title-content-salad-to-basket">
+                <div id="amount-order-salad-to-basket-${index}" class="amount-salad-to-basket">  ${ArrObj.amount} </div>
+                <div class="salad-basket"> <h4 class="salad-basket" id="name-warm-${index}"> x ${ArrObj.name}</h4></div> 
+            </div>
+            <div class="order-into-basket">
+            <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
+            <!--<div class="add-choice">
+                    <button id="btn-add-burger-${index}" type="button" class="btn-icon btn-lg rounded-pill" aria-label="Add burger" onclick="getOrdertoBasket(${index})">
+                       
+                        <i class="bi-plus-lg" aria-hidden="true"></i>
+                       
+                    </button>
+                </div> -->
+            </div> 
+        </div>
+    `;
+}
+
+function renderMiniGreenWarenkorb(ArrObj, index) {
+    return /*html*/ `
+        <div class="pizza-categorie-basket"> 
+            <div class="title-content-salad-to-basket">
+                <div id="amount-order-salad-to-basket-${index}" class="amount-salad-to-basket">  ${ArrObj.amount} </div>
+                <div class="salad-basket"> <h4 class="salad-basket" id="name-salas-${index}"> x ${ArrObj.name}</h4></div> 
+            </div>
+            <div class="order-into-basket">
+            <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
+            <!--<div class="add-choice">
+                    <button id="btn-add-burger-${index}" type="button" class="btn-icon btn-lg rounded-pill" aria-label="Add burger" onclick="getOrdertoBasket(${index})">
+                       
+                        <i class="bi-plus-lg" aria-hidden="true"></i>
+                       
+                    </button>
+                </div> -->
+            </div> 
+        </div>
+    `;
+}
+
+function renderSeeFoodWarenkorb(ArrObj, index) {
+    return /*html*/ `
+        <div class="salad-categorie-basket"> 
+            <div class="title-content-salad-to-basket">
+                <div id="amount-order-salad-to-basket-${index}" class="amount-salad-to-basket"> ${ArrObj.amount} </div>
+                <div class="salad-basket"> <h4 class="salad-basket" id="name-food-${index}"> x ${ArrObj.name}</h4></div> 
+            </div>
+            <div class="order-into-basket">
+            <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
+            <!--<div class="add-choice">
+                    <button id="btn-add-burger-${index}" type="button" class="btn-icon btn-lg rounded-pill" aria-label="Add burger" onclick="getOrdertoBasket(${index})">
+                       
+                        <i class="bi-plus-lg" aria-hidden="true"></i>
+                       
+                    </button>
+                </div> -->
+            </div> 
+        </div>
+    `;
+}
+
+function renderVeganSaladTofu(ArrObj, index) {
+    return /*html*/ `
+        <div class="salad-categorie-basket"> 
+            <div class="title-content-salad-to-basket">
+                <div id="amount-order-salad-to-basket-${index}" class="amount-salad-to-basket">  ${ArrObj.amount} </div>
+                <div class="salad-basket"> <h4 class="salad-basket" id="name-tofu-${index}"> x ${ArrObj.name}</h4></div> 
+            </div>
+            <div class="order-into-basket">
+            <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
+            <!--<div class="add-choice">
+                    <button id="btn-add-burger-${index}" type="button" class="btn-icon btn-lg rounded-pill" aria-label="Add burger" onclick="getOrdertoBasket(${index})">
+                       
+                        <i class="bi-plus-lg" aria-hidden="true"></i>
+                       
+                    </button>
+                </div> -->
+            </div> 
+        </div>
+    `;
+}

@@ -121,4 +121,16 @@ for (let i = 1; i < arrDishes.length - 1; i++) {
         console.log(elt.image);
         console.log(elt.amount + 2);
     }
-} */
+}
+
+for (let i = 2; i < arrDishes.length; i++) {
+    let categorie = arrDishes[i];
+    for (let j = 0; j < categorie.length; j++) {
+        const elt = categorie[j];
+        console.log(elt.name);
+        console.log(elt.image);
+        console.log(elt.amount + 2);
+    }
+} 
+
+*/

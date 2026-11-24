@@ -1,0 +1,6 @@
+.calculation-content {
+  display: flex;
+  width: 380px;
+  height: 250px;
+  border: 2px solid rebeccapurple;
+}

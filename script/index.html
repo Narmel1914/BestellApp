@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="../style/rendersaladstyle.css" />
     <link rel="stylesheet" href="../style/responsive-style.css" />
     <link rel="stylesheet" href="../style/yourbasket.css" />
-    <link rel="stylesheet" href="../style/progressbar.csss" />
+    <link rel="stylesheet" href="../style/progressbar.css" />
+    <link rel="stylesheet" href="../style/calculationbasket.css" />
 
     <script src="../Raw-data/db.js" defer></script>
     <script src="../script/template/cardviewtemplate.js" defer></script>
@@ -31,6 +32,7 @@
     <script src="../script/amountorder/burgercartegorie.js" defer></script>
     <script src="../script/amountorder/pizzacategorie.js" defer></script>
     <script src="../script/amountorder/saladcartegorie.js" defer></script>
+    <script src="../script/template/basketcalculation.js" defer></script>
 
     <title>BestellApp</title>
   </head>
@@ -122,16 +124,25 @@
                 /></a>
               </div>
             </div>
-            <div class="all-oder-into-basket">
-              <div id="burger-basket"></div>
-              <div id="meat-burger-basket"></div>
-              <div id="red-burger-basket"></div>
-              <div id="big-chicken-burger-basket"></div>
 
-              <div id="margheritta-basket"></div>
-              <div id="chorizo-basket"></div>
-              <div id="funghi-basket"></div>
-              <div id="quattro-basket"></div>
+            <div class="amound-price-basket">
+              <div class="all-basket">
+                <div id="burger-basket"></div>
+                <div id="meat-burger-basket"></div>
+                <div id="red-burger-basket"></div>
+                <div id="big-chicken-burger-basket"></div>
+
+                <div id="margheritta-basket"></div>
+                <div id="chorizo-basket"></div>
+                <div id="funghi-basket"></div>
+                <div id="quattro-basket"></div>
+
+                <div id="warm-basket"></div>
+                <div id="mini-basket"></div>
+                <div id="food-basket"></div>
+                <div id="tofu-basket"></div>
+              </div>
+              <div id="calculation-basket" class="calculation-content"></div>
             </div>
           </div>
         </div>
@@ -150,18 +161,23 @@
         </div>
         <div class="menu-pizza-wrapper">
           <div id="menu-pizza" class="pizza_30cm"></div>
-          <div class="test"></div>
+          <div class="empty-box"></div>
         </div>
 
         <div class="salad-categorie">
-          <img
-            class="img-salad-categorie"
-            src="../assets/icons/Salad1.png"
-            alt=""
-          />
-          <h3>Salad</h3>
+          <div class="img-cat3">
+            <img
+              class="img-salad-categorie"
+              src="../assets/icons/Salad1.png"
+              alt=""
+            />
+          </div>
+          <div class="salad"><h3>Salad</h3></div>
         </div>
-        <div id="menu-salad" class="salad"></div>
+        <dir class="menu-salad-wrapper">
+          <div id="menu-salad" class="salad"></div>
+          <div class="empty-box"></div>
+        </dir>
       </section>
     </main>
   </body>

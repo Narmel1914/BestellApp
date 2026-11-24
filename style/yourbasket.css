@@ -1,19 +1,20 @@
 .basket-content {
-  display: flex;
   border: 1px solid #363534;
   background-color: #363534;
   width: 435px;
-  height: 794px;
+  height: auto;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   /*justify-content: space-between;*/
 }
 .title-your-basket {
   display: flex;
   color: white;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .title-your-basket > h3 {
   font-family: "Palanquin", sans-serif;
@@ -21,12 +22,12 @@
   font-size: 32px;
 }
 .burger-categorie-basket {
-  /*width: 340px;
-  height: 129px;*/
+  width: 300px;
+  height: auto;
   gap: 10px;
   margin-top: 10px;
   border-radius: 20px;
-  /*padding: 20px;*/
+  padding: 0 15px;
   background-color: #fdeadc;
   display: flex;
   flex-direction: column;
@@ -37,24 +38,32 @@
   transform: translateX(-30px);
   gap: 3px;
 }
-
-.basket-burger > h4 {
+#name-burger > h4 {
+  max-width: 320px;
   font-size: 16px;
   text-align: center;
+  word-break: normal;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+.basket-burger {
+  display: flex;
 }
 .oder-into-basket {
   background-color: #fdeadc;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
 .empty-basket-text {
-  width: 387px;
-  height: 294px;
+  /*width: 387px;
+  height: 294px;*/
   display: flex; /* when choice is start display: none*/
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 .text-empty {
   font-family: "Palanquin", sans-serif;
@@ -75,12 +84,12 @@
 
 .menu-pizza-wrapper {
   display: flex;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   max-width: 1440px;
 }
 .pizza-categorie-basket {
-  /*width: 340px;
-  height: 129px;*/
+  width: 300px;
+  height: auto;
   gap: 10px;
   margin-top: 10px;
   border-radius: 20px;
@@ -97,6 +106,35 @@
 }
 
 .pizza-basket > h4 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.menu-salad-wrapper {
+  display: flex;
+  /*border: 2px solid black;*/
+  max-width: 1440px;
+}
+.salad-categorie-basket {
+  width: 300px;
+  height: auto;
+  gap: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  /*padding: 20px;*/
+  background-color: #fdeadc;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-content-salad-to-basket {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(-30px);
+  gap: 3px;
+}
+
+.salad-basket > h4 {
   font-size: 16px;
   text-align: center;
 }

@@ -55,3 +55,60 @@ button {
   font-size: 24px;
   font-weight: 400;
 }
+.trash {
+  width: 16px;
+  height: 18px;
+  background-color: #363534;
+}
+
+.order-into-basket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.bi-plus::before {
+  content: "\f4fe";
+}
+
+button {
+  cursor: pointer;
+  background-color: #fdeadc;
+}
+
+.add-remove-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.totol-amount {
+  display: flex;
+  text-align: center;
+  color: #363534;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+  background-color: #fdeadc;
+}
+
+#amount-buger-to-basket {
+  display: none;
+}
+h4 .h4 {
+  font-family: "Palanquin";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #363534;
+}

@@ -1,16 +1,16 @@
 //getOrdertoBasket(arrDishes);
 
 
-function getBurgertoBasket(index) {
+function getBurgertoBasket(ID) {
 
     for (let i = 0; i < arrDishes.length - 2; i++) {
         let categorie = arrDishes[i];
 
         for (let j = 0; j < categorie.length - 3; j++) {
             const elt = categorie[j];
-            const back_burger = document.getElementById("burger-basket");
-            back_burger.innerHTML = /*html*/ `
-                    ${renderBurgerWarenkorb(elt, index)}              
+            const black_burger = document.getElementById("burger-basket-");
+            black_burger.innerHTML = /*html*/ `
+                    ${renderBackBurgerWarenkorb(elt, ID)}              
                     `;
         }
 
@@ -18,23 +18,23 @@ function getBurgertoBasket(index) {
 
 }
 
-function getMeatBurgertoBasket(index) {
+function getMeatBurgertoBasket(ID) {
 
     for (let i = 0; i < arrDishes.length - 2; i++) {
         let categorie = arrDishes[i];
 
         for (let j = 1; j < categorie.length - 2; j++) {
             const elt = categorie[j];
-            const meat_burger = document.getElementById("meat-burger-basket");
+            const meat_burger = document.getElementById("meat-burger-basket-");
             meat_burger.innerHTML = /*html*/ `
-                    ${renderMeatBurgerWarenkorb(elt, index)}              
+                    ${renderMeatBurgerWarenkorb(elt, ID)}              
                     `;
         }
 
     }
 
 }
-function getRedBurgertoBasket(index) {
+function getRedBurgertoBasket(ID) {
 
     for (let i = 0; i < arrDishes.length - 2; i++) {
         let categorie = arrDishes[i];
@@ -43,7 +43,7 @@ function getRedBurgertoBasket(index) {
             const elt = categorie[j];
             const red_burger = document.getElementById("red-burger-basket");
             red_burger.innerHTML = /*html*/ `
-                    ${renderRedBurgerWarenkorb(elt, index)}              
+                    ${renderRedBurgerWarenkorb(elt, ID)}              
                     `;
         }
 
@@ -51,7 +51,7 @@ function getRedBurgertoBasket(index) {
 
 }
 
-function getBigChickenBurgertoBasket(index) {
+function getBigChickenBurgertoBasket(ID) {
 
     for (let i = 0; i < arrDishes.length - 2; i++) {
         let categorie = arrDishes[i];
@@ -60,7 +60,7 @@ function getBigChickenBurgertoBasket(index) {
             const elt = categorie[j];
             const big_burger = document.getElementById("big-chicken-burger-basket");
             big_burger.innerHTML = /*html*/ `
-                    ${renderBigChickenBurgerWarenkorb(elt, index)}              
+                    ${renderBigChickenBurgerWarenkorb(elt, ID)}              
                     `;
         }
 
@@ -72,7 +72,7 @@ function getBigChickenBurgertoBasket(index) {
 /* Pizza */
 
 
-function getMagherittatoBasket(index) {
+function getMagherittatoBasket(ID) {
 
     for (let i = 1; i < arrDishes.length - 1; i++) {
         let categorie = arrDishes[i];
@@ -81,7 +81,7 @@ function getMagherittatoBasket(index) {
             const elt = categorie[j];
             const margheritta = document.getElementById("margheritta-basket");
             margheritta.innerHTML = /*html*/ `
-                    ${renderMargherittaWarenkorb(elt, index)}              
+                    ${renderMargherittaWarenkorb(elt, ID)}              
                     `;
         }
 
@@ -89,7 +89,7 @@ function getMagherittatoBasket(index) {
 
 }
 
-function getChorizotoBasket(index) {
+function getChorizotoBasket(ID) {
 
     for (let i = 1; i < arrDishes.length - 1; i++) {
         let categorie = arrDishes[i];
@@ -98,14 +98,14 @@ function getChorizotoBasket(index) {
             const elt = categorie[j];
             const chorizo = document.getElementById("chorizo-basket");
             chorizo.innerHTML = /*html*/ `
-                    ${renderChorizoWarenkorb(elt, index)}              
+                    ${renderChorizoWarenkorb(elt, ID)}              
                     `;
         }
 
     }
 
 }
-function getFunghitoBasket(index) {
+function getFunghitoBasket(ID) {
 
     for (let i = 1; i < arrDishes.length - 1; i++) {
         let categorie = arrDishes[i];
@@ -114,7 +114,7 @@ function getFunghitoBasket(index) {
             const elt = categorie[j];
             const funghi = document.getElementById("funghi-basket");
             funghi.innerHTML = /*html*/ `
-                    ${renderFunghiWarenkorb(elt, index)}              
+                    ${renderFunghiWarenkorb(elt, ID)}              
                     `;
         }
 
@@ -122,7 +122,7 @@ function getFunghitoBasket(index) {
 
 }
 
-function getQuattrotoBasket(index) {
+function getQuattrotoBasket(ID) {
 
     for (let i = 1; i < arrDishes.length - 1; i++) {
         let categorie = arrDishes[i];
@@ -131,7 +131,7 @@ function getQuattrotoBasket(index) {
             const elt = categorie[j];
             const quattro = document.getElementById("quattro-basket");
             quattro.innerHTML = /*html*/ `
-                    ${renderQuattroWarenkorb(elt, index)}              
+                    ${renderQuattroWarenkorb(elt, ID)}              
                     `;
         }
 
@@ -143,7 +143,7 @@ function getQuattrotoBasket(index) {
 /* Salad */
 
 
-function getWarmBeefootBasket(index) {
+function getWarmBeefootBasket(ID) {
 
     for (let i = 2; i < arrDishes.length; i++) {
         let categorie = arrDishes[i];
@@ -152,7 +152,7 @@ function getWarmBeefootBasket(index) {
             const elt = categorie[j];
             const warm = document.getElementById("warm-basket");
             warm.innerHTML = /*html*/ `
-                    ${renderWarmBeeWarenkorb(elt, index)}              
+                    ${renderWarmBeeWarenkorb(elt, ID)}              
                     `;
         }
 
@@ -160,7 +160,7 @@ function getWarmBeefootBasket(index) {
 
 }
 
-function getMiniGreentoBasket(index) {
+function getMiniGreentoBasket(ID) {
 
     for (let i = 2; i < arrDishes.length; i++) {
         let categorie = arrDishes[i];
@@ -169,14 +169,14 @@ function getMiniGreentoBasket(index) {
             const elt = categorie[j];
             const chorizo = document.getElementById("mini-basket");
             chorizo.innerHTML = /*html*/ `
-                    ${renderMiniGreenWarenkorb(elt, index)}              
+                    ${renderMiniGreenWarenkorb(elt, ID)}              
                     `;
         }
 
     }
 
 }
-function getSaladSeeFoodtoBasket(index) {
+function getSaladSeeFoodtoBasket(ID) {
 
     for (let i = 2; i < arrDishes.length; i++) {
         let categorie = arrDishes[i];
@@ -185,7 +185,7 @@ function getSaladSeeFoodtoBasket(index) {
             const elt = categorie[j];
             const funghi = document.getElementById("food-basket");
             funghi.innerHTML = /*html*/ `
-                    ${renderSeeFoodWarenkorb(elt, index)}              
+                    ${renderSeeFoodWarenkorb(elt, ID)}              
                     `;
         }
 
@@ -193,7 +193,7 @@ function getSaladSeeFoodtoBasket(index) {
 
 }
 
-function getVeganSaladTofutoBasket(index) {
+function getVeganSaladTofutoBasket(ID) {
 
     for (let i = 2; i < arrDishes.length; i++) {
         let categorie = arrDishes[i];
@@ -202,7 +202,7 @@ function getVeganSaladTofutoBasket(index) {
             const elt = categorie[j];
             const quattro = document.getElementById("tofu-basket");
             quattro.innerHTML = /*html*/ `
-                    ${renderVeganSaladTofu(elt, index)}              
+                    ${renderVeganSaladTofu(elt, ID)}              
                     `;
         }
 

@@ -1,6 +1,29 @@
 .calculation-content {
   display: flex;
+  flex-direction: column;
   width: 380px;
   height: 250px;
   border: 2px solid rebeccapurple;
+}
+
+.calculation-top {
+  width: 300px;
+  background-color: white;
+}
+
+.all-basket {
+  width: 380px;
+  height: 300px;
+  border: 2px solid rebeccapurple;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.calculation-bottom {
+  width: 300px;
+  background-color: white;
+}
+.white-line {
+  border: 2px solid white;
+  display: flex;
 }

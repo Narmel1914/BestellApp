@@ -39,7 +39,7 @@ header {
 }
 .landing-section {
   background-position: center;
-  height: 508px;
+  /*height: 508px;*/
   max-width: 1440px;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ header {
 }
 .img-pub {
   width: 100%;
-  height: 508px;
+  /* height: 508px;*/
 }
 .sublanding-section {
   transform: translateY(-140px);
@@ -119,7 +119,7 @@ header {
 }
 .all-basket {
   width: 380px;
-  height: auto;
+  height: 300px;
   border: 2px solid rebeccapurple;
   overflow-y: auto;
   display: flex;

@@ -133,4 +133,16 @@ for (let i = 2; i < arrDishes.length; i++) {
     }
 } 
 
-*/
+
+
+for (let i = 0; i < arrDishes.length - 2; i++) {
+    let categorie = arrDishes[i];
+    for (let j = 0; j < categorie.length; j++) {
+        const elt = categorie[j];
+        console.log(elt.name);
+        console.log(elt.price);
+        console.log(elt.amount + 1);
+        console.log("sum${ij}", elt.price * (elt.amount + 1));
+    }
+}
+    */

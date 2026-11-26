@@ -5,21 +5,21 @@ function sumOrder(index) {
                         <thead>
                             <tr>
                                 <th class="sub-total-basket">Subtotal</th>
-                                <td id="amount-by-price-without-fee-${index}">:${XXXX}</td>
+                                <td id="amount-by-price-without-fee-${index}"></td>
                             </tr>
                             <tr>
                                 <th class="delivery-fee">Delivery fee</th>
-                                 <td id ="delivery-fee-basket">4.99€</td>
+                                 <td id ="delivery-fee-basket-${index}"> 4.99€</td>
                             </tr>
                             <hr class="white-line">
                             <tr>
                                 <th class="Total">Total</th>
-                                <td id="amount-by-price-with-fee-${index}">:${XXXX}</td>
+                                <td id="amount-by-price-with-fee-${index}"></td>
                             </tr>
                         </thead>
                     </table>
         </div>
-              
+                
         <div class=calculation-bottom>
             <div class="confirm-order">
                 <button type="submit"></button>

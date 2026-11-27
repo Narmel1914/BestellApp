@@ -9,11 +9,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/*
-#empty-basket-text-display {
-  display: none;
-}
-*/
+
 .single-menu-burger {
   background-color: #fdeadc;
   display: flex;
@@ -49,16 +45,11 @@
 
 button {
   cursor: pointer;
-  color: red;
+  color: black;
   background-color: white;
   border: none;
   font-size: 24px;
   font-weight: 400;
-}
-.trash {
-  width: 16px;
-  height: 18px;
-  background-color: #363534;
 }
 
 .order-into-basket {
@@ -71,19 +62,19 @@ button {
 .bi-plus::before {
   content: "\f4fe";
 }
-
+/*
 button {
   cursor: pointer;
   background-color: #fdeadc;
 }
-
+*/
 .add-remove-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
 }
-.totol-amount {
+.total-amount {
   display: flex;
   text-align: center;
   color: #363534;
@@ -91,8 +82,6 @@ button {
   font-weight: bold;
 }
 
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
 button:not(:disabled) {
   cursor: pointer;
@@ -111,4 +100,7 @@ h4 .h4 {
   line-height: 100%;
   letter-spacing: 0%;
   color: #363534;
+}
+.menu-basket-wrapper {
+  display: flex;
 }

@@ -40,8 +40,8 @@ function renderPizzaTemplate(ArrObj, index) {
             <div class="price-addOrder">
                 <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
             <div class="add-choice">
-                    <button  id="btn-add-pizza-${index}" type="button"  class="btn-icon btn-lg rounded-pill" aria-label="Add pizza" onclick="getOrderPizza( ${index})">
-                        <i class="bi bi-plus" aria-hidden="true"></i>
+                    <button  id="btn-add-pizza-${index}" type="button"  class="btn-icon btn-lg rounded-pill" aria-label="Add pizza" onclick="getOrderPizza(${index})">
+                        <i class="bi-plus" aria-hidden="true"></i>
                     </button>
                 </div>
             </div> 

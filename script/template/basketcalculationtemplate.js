@@ -11,19 +11,23 @@ function sumOrder(index) {
                                 <th class="delivery-fee">Delivery fee</th>
                                  <td id ="delivery-fee-basket-${index}"> 4.99€</td>
                             </tr>
-                            <hr class="white-line">
+                      </thead>
+                    </table> 
+                    <table class="basket-table-Total">
+                        <thead>  
                             <tr>
                                 <th class="Total">Total</th>
                                 <td id="amount-by-price-with-fee-${index}"></td>
                             </tr>
-                        </thead>
-                    </table>
+                      </thead>
+                    </table> 
+                      
         </div>
                 
-        <div class=calculation-bottom>
-            <div class="confirm-order">
-                <button type="submit"></button>
-            </div>
+        <div class="calculation-bottom">
+         
+                <button id="confirm-order" class="submit-payement" type="submit">test</button>
+         
         </div>
    `;
 

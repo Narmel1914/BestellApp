@@ -108,12 +108,11 @@ const Salad =
     ];
 
 
-let arrDishes = [burger_sandwiches, pizza_30cm, Salad]; // array object of Json
-
+let arrDishes = [burger_sandwiches, pizza_30cm, Salad];// array object of Json
 
 //console.log(arrDishes[0]); // 3
 /* test
-for (let i = 1; i < arrDishes.length - 1; i++) {
+for (let i = 1; i < arrDishes.length - 3; i++) {
     let categorie = arrDishes[i];
     for (let j = 0; j < categorie.length; j++) {
         const elt = categorie[j];

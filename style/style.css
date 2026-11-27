@@ -93,25 +93,37 @@ header {
   text-align: left;
 }
 .restaurant-rating {
+  width: 120px;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
+  background-color: #facaac;
+}
+.rating-qoute {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.rating-star {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 16px;
+  color: #363534;
 }
 .span-quote {
   color: #363534;
+  font-size: 16px;
+  font-weight: 900;
 }
-.h5 h5 {
-  font-size: 1rem;
+.quote {
+  font-size: 16px;
   color: #726d6d;
-  margin-bottom: 0;
 }
 
-.menu-basket-wrapper {
-  display: flex;
-  /*border: 2px solid black;*/
-  max-width: 1440px;
-}
 .amount-price-basket {
   display: flex;
   flex-direction: column;
@@ -120,7 +132,6 @@ header {
 .all-basket {
   width: 380px;
   height: 300px;
-  border: 2px solid rebeccapurple;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -142,6 +153,19 @@ header {
   font-size: 40px;
   display: flex;
   text-align: left;
+  align-items: flex-start;
+
+  display: flex;
+  align-items: center;
+}
+.pizza-categorie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  background-color: #e76c1f;
+  height: 60px;
 }
 
 .pizza {
@@ -151,20 +175,17 @@ header {
   font-size: 40px;
   display: flex;
   text-align: left;
+  align-items: flex-start;
+  display: flex;
+  align-items: center;
 }
 
-.pizza-categorie {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  background-color: #e76c1f;
-  height: 60px;
-}
 .salad-categorie {
   display: flex;
   flex-direction: row;
   gap: 10px;
   background-color: #e76c1f;
+  color: white;
   height: 60px;
 }
 .img-burger-categorie {

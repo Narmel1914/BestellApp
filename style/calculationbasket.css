@@ -3,27 +3,57 @@
   flex-direction: column;
   width: 380px;
   height: 250px;
-  border: 2px solid rebeccapurple;
 }
 
 .calculation-top {
   width: 300px;
-  background-color: white;
 }
 
 .all-basket {
   width: 380px;
   height: 300px;
-  border: 2px solid rebeccapurple;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
 }
 .calculation-bottom {
   width: 300px;
-  background-color: white;
 }
 .white-line {
   border: 2px solid white;
   display: flex;
+}
+
+th,
+td,
+tr {
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.basket-table {
+  width: 300px;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  border-collapse: collapse;
+  border-bottom: 3px solid white;
+  font-family: "Palanquin", sans-serif;
+  font-size: 20px;
+}
+.basket-table-Total {
+  width: 300px;
+  align-content: space-between;
+  justify-content: space-between;
+  border-collapse: collapse;
+  font-family: "Palanquin", sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+}
+.Total {
+  border-top: 4px;
+}
+table {
+  border-collapse: collapse;
 }

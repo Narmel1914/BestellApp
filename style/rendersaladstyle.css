@@ -2,23 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 713px;
-  height: 612px;
   gap: 8px;
-  margin-top: 10px;
-  transform: translateX(-125px);
+  color: white;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: left;
 }
 
 .single-menu-salad {
   background-color: #fdeadc;
   display: flex;
   flex-direction: row;
-  height: 141px;
   width: 715px;
   border-radius: 5px;
   align-items: center;
   align-content: space-between;
-
   gap: 10px;
 }
 
@@ -39,4 +38,7 @@
   font-family: "Palanquin", sans-serif;
   color: #363534;
   font-size: 16px;
+}
+.menu-salad-wrapper {
+  display: flex;
 }

@@ -2,70 +2,80 @@
 
 
 function getBurgertoBasket(ID) {
-
-    for (let i = 0; i < arrDishes.length - 2; i++) {
-        let categorie = arrDishes[i];
-
-        for (let j = 0; j < categorie.length - 3; j++) {
-            const elt = categorie[j];
-            const black_burger = document.getElementById("burger-basket-");
-            black_burger.innerHTML = /*html*/ `
-                    ${renderBackBurgerWarenkorb(elt, ID)}              
-                    `;
+    const basket = document.getElementById("black-burger-basket");
+    if (basket === null) {
+        console.log("black-burger-basket" + ID + "-Not exist");
+        return;
+    }
+    for (let i = 0; i < burger_sandwiches.length; i++) {
+        if (i === ID) {
+            let black_burger = document.getElementById("add-black-burger-" + ID);
+            if (black_burger !== null) {
+                return;
+            }
+            basket.innerHTML += /*html*/   `
+                ${renderBackBurgerWarenkorb(burger_sandwiches[i], ID)}              
+                                `;
+            break;
         }
 
     }
-
 }
 
 function getMeatBurgertoBasket(ID) {
 
-    for (let i = 0; i < arrDishes.length - 2; i++) {
-        let categorie = arrDishes[i];
+    const basket = document.getElementById("meat-burger-basket");
+    if (basket === null) {
+        console.log("meat-burger-basket" + ID + "-Not exist");
+        return;
+    }
 
-        for (let j = 1; j < categorie.length - 2; j++) {
-            const elt = categorie[j];
-            const meat_burger = document.getElementById("meat-burger-basket-");
-            meat_burger.innerHTML = /*html*/ `
-                    ${renderMeatBurgerWarenkorb(elt, ID)}              
-                    `;
+    for (let i = 0; i < burger_sandwiches.length; i++) {
+        if (i === ID) {
+            const meat_burger = document.getElementById("add-meat-burger-" + ID);
+            if (meat_burger !== null) return;
+
+            basket.innerHTML += renderMeatBurgerWarenkorb(burger_sandwiches[i], ID);
+            break;
         }
-
     }
 
 }
 function getRedBurgertoBasket(ID) {
-
-    for (let i = 0; i < arrDishes.length - 2; i++) {
-        let categorie = arrDishes[i];
-
-        for (let j = 2; j < categorie.length - 1; j++) {
-            const elt = categorie[j];
-            const red_burger = document.getElementById("red-burger-basket");
-            red_burger.innerHTML = /*html*/ `
-                    ${renderRedBurgerWarenkorb(elt, ID)}              
-                    `;
-        }
-
+    const basket = document.getElementById("red-burger-basket");
+    if (basket === null) {
+        console.log("red-burger-basket" + ID + "-Not exist");
+        return;
     }
+    for (let i = 0; i < burger_sandwiches.length; i++) {
+        if (i === ID) {
+            const red_burger = document.getElementById("add-red-burger-" + ID);
+            if (red_burger !== null) return;
+
+            basket.innerHTML += renderRedBurgerWarenkorb(burger_sandwiches[i], ID);
+            break;
+        }
+    }
+
 
 }
 
 function getBigChickenBurgertoBasket(ID) {
 
-    for (let i = 0; i < arrDishes.length - 2; i++) {
-        let categorie = arrDishes[i];
-
-        for (let j = 3; j < categorie.length; j++) {
-            const elt = categorie[j];
-            const big_burger = document.getElementById("big-chicken-burger-basket");
-            big_burger.innerHTML = /*html*/ `
-                    ${renderBigChickenBurgerWarenkorb(elt, ID)}              
-                    `;
-        }
-
+    const basket = document.getElementById("big-chicken-burger-basket");
+    if (basket === null) {
+        console.log("big-burger-basket" + ID + "-Not exist");
+        return;
     }
+    for (let i = 0; i < burger_sandwiches.length; i++) {
+        if (i === ID) {
+            const red_burger = document.getElementById("add-chicken-burger-" + ID);
+            if (red_burger !== null) return;
 
+            basket.innerHTML += renderBigChickenBurgerWarenkorb(burger_sandwiches[i], ID);
+            break;
+        }
+    }
 }
 
 
@@ -74,65 +84,85 @@ function getBigChickenBurgertoBasket(ID) {
 
 function getMagherittatoBasket(ID) {
 
-    for (let i = 1; i < arrDishes.length - 1; i++) {
-        let categorie = arrDishes[i];
+    const basket = document.getElementById("margheritta-basket");
+    if (basket === null) {
+        console.log("margheritta-basket" + ID + "-Not exist");
+        return;
+    }
 
-        for (let j = 0; j < categorie.length - 3; j++) {
-            const elt = categorie[j];
-            const margheritta = document.getElementById("margheritta-basket");
-            margheritta.innerHTML = /*html*/ `
-                    ${renderMargherittaWarenkorb(elt, ID)}              
-                    `;
+
+    for (let i = 0; i < pizza_30cm.length; i++) {
+        if (i === ID) {
+            const margheritta_pizza = document.getElementById("add-margheritta-pizza-" + ID);
+            if (margheritta_pizza !== null) return;
+            //pizza_30cm[i].amount = 1;
+            basket.innerHTML += renderMargherittaWarenkorb(pizza_30cm[i], ID);
+            break;
         }
-
     }
 
 }
 
+//getMagherittatoBasket(4);
+
+
+
 function getChorizotoBasket(ID) {
 
-    for (let i = 1; i < arrDishes.length - 1; i++) {
-        let categorie = arrDishes[i];
+    const basket = document.getElementById("chorizo-basket");
+    if (basket === null) {
+        console.log("chorizo-basket" + ID + "-Not exist");
+        return;
+    }
 
-        for (let j = 1; j < categorie.length - 2; j++) {
-            const elt = categorie[j];
-            const chorizo = document.getElementById("chorizo-basket");
-            chorizo.innerHTML = /*html*/ `
-                    ${renderChorizoWarenkorb(elt, ID)}              
-                    `;
+    for (let i = 0; i < pizza_30cm.length; i++) {
+        if (i === ID) {
+            const margheritta_pizza = document.getElementById("add-chorizo-pizza-" + ID);
+            if (margheritta_pizza !== null) return;
+
+            basket.innerHTML += renderChorizoWarenkorb(pizza_30cm[i], ID);
+            break;
         }
-
     }
 
 }
 function getFunghitoBasket(ID) {
 
-    for (let i = 1; i < arrDishes.length - 1; i++) {
-        let categorie = arrDishes[i];
-
-        for (let j = 2; j < categorie.length - 1; j++) {
-            const elt = categorie[j];
-            const funghi = document.getElementById("funghi-basket");
-            funghi.innerHTML = /*html*/ `
-                    ${renderFunghiWarenkorb(elt, ID)}              
-                    `;
-        }
-
+    const basket = document.getElementById("funghi-basket");
+    if (basket === null) {
+        console.log("funghi-basket" + ID + "-Not exist");
+        return;
     }
+
+    for (let i = 0; i < pizza_30cm.length; i++) {
+        if (i === ID) {
+            const funghi_pizza = document.getElementById("add-funghi-pizza-" + ID);
+            if (funghi_pizza !== null) return;
+
+            basket.innerHTML += renderFunghiWarenkorb(pizza_30cm[i], ID);
+            break;
+        }
+    }
+
+
 
 }
 
 function getQuattrotoBasket(ID) {
 
-    for (let i = 1; i < arrDishes.length - 1; i++) {
-        let categorie = arrDishes[i];
+    const basket = document.getElementById("quattro-basket");
+    if (basket === null) {
+        console.log("quattro-basket" + ID + "-Not exist");
+        return;
+    }
 
-        for (let j = 3; j < categorie.length; j++) {
-            const elt = categorie[j];
-            const quattro = document.getElementById("quattro-basket");
-            quattro.innerHTML = /*html*/ `
-                    ${renderQuattroWarenkorb(elt, ID)}              
-                    `;
+    for (let i = 0; i < pizza_30cm.length; i++) {
+        if (i === ID) {
+            const quattro_pizza = document.getElementById("add-quattro-pizza-" + ID);
+            if (quattro_pizza !== null) return;
+
+            basket.innerHTML += renderQuattroWarenkorb(pizza_30cm[i], ID);
+            break;
         }
 
     }
@@ -144,16 +174,19 @@ function getQuattrotoBasket(ID) {
 
 
 function getWarmBeefootBasket(ID) {
+    const basket = document.getElementById("warm-basket");
+    if (basket === null) {
+        console.log("warm-basket" + ID + "-Not exist");
+        return;
+    }
 
-    for (let i = 2; i < arrDishes.length; i++) {
-        let categorie = arrDishes[i];
+    for (let i = 0; i < pizza_30cm.length; i++) {
+        if (i === ID) {
+            const warm_salad = document.getElementById("add-warm-salad-" + ID);
+            if (warm_salad !== null) return;
 
-        for (let j = 0; j < categorie.length - 3; j++) {
-            const elt = categorie[j];
-            const warm = document.getElementById("warm-basket");
-            warm.innerHTML = /*html*/ `
-                    ${renderWarmBeeWarenkorb(elt, ID)}              
-                    `;
+            basket.innerHTML += renderWarmBeeWarenkorb(Salad[i], ID);
+            break;
         }
 
     }
@@ -162,50 +195,67 @@ function getWarmBeefootBasket(ID) {
 
 function getMiniGreentoBasket(ID) {
 
-    for (let i = 2; i < arrDishes.length; i++) {
-        let categorie = arrDishes[i];
+    const basket = document.getElementById("mini-basket");
+    if (basket === null) {
+        console.log("mini-basket" + ID + "-Not exist");
+        return;
+    }
 
-        for (let j = 1; j < categorie.length - 2; j++) {
-            const elt = categorie[j];
-            const chorizo = document.getElementById("mini-basket");
-            chorizo.innerHTML = /*html*/ `
-                    ${renderMiniGreenWarenkorb(elt, ID)}              
-                    `;
+    for (let i = 0; i < pizza_30cm.length; i++) {
+        if (i === ID) {
+            const mini_salad = document.getElementById("add-mini-salad-" + ID);
+            if (mini_salad !== null) return;
+
+            basket.innerHTML += renderMiniGreenWarenkorb(Salad[i], ID);
+            break;
         }
 
     }
 
 }
+
+
 function getSaladSeeFoodtoBasket(ID) {
 
-    for (let i = 2; i < arrDishes.length; i++) {
-        let categorie = arrDishes[i];
+    const basket = document.getElementById("food-basket");
+    if (basket === null) {
+        console.log("food-basket" + ID + "-Not exist");
+        return;
+    }
 
-        for (let j = 2; j < categorie.length - 1; j++) {
-            const elt = categorie[j];
-            const funghi = document.getElementById("food-basket");
-            funghi.innerHTML = /*html*/ `
-                    ${renderSeeFoodWarenkorb(elt, ID)}              
-                    `;
+    for (let i = 0; i < pizza_30cm.length; i++) {
+        if (i === ID) {
+            const food_salad = document.getElementById("add-food-salad-" + ID);
+            if (food_salad !== null) return;
+
+            basket.innerHTML += renderSeeFoodWarenkorb(Salad[i], ID);
+            break;
         }
 
     }
 
 }
+
 
 function getVeganSaladTofutoBasket(ID) {
 
-    for (let i = 2; i < arrDishes.length; i++) {
-        let categorie = arrDishes[i];
+    const basket = document.getElementById("tofu-basket");
+    if (basket === null) {
+        console.log("tofu-basket" + ID + "-Not exist");
+        return;
+    }
 
-        for (let j = 3; j < categorie.length; j++) {
-            const elt = categorie[j];
-            const quattro = document.getElementById("tofu-basket");
-            quattro.innerHTML = /*html*/ `
-                    ${renderVeganSaladTofu(elt, ID)}              
-                    `;
+    for (let i = 0; i < pizza_30cm.length; i++) {
+        if (i === ID) {
+            const tofu_salad = document.getElementById("add-tofu-salad-" + ID);
+            if (tofu_salad !== null) return;
+
+            basket.innerHTML += renderVeganSaladTofu(Salad[i], ID);
+            break;
         }
 
     }
 
 }
+
+

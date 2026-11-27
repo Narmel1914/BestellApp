@@ -16,9 +16,6 @@
   display: flex;
   flex-direction: column;
 }
-.calculation-bottom {
-  width: 300px;
-}
 .white-line {
   border: 2px solid white;
   display: flex;
@@ -56,4 +53,84 @@ tr {
 }
 table {
   border-collapse: collapse;
+}
+
+.calculation-bottom {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 300px;
+
+  background-color: #e76c1f;
+  border-radius: 30px;
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.calculation-bottom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.calculation-bottom:active {
+  transform: scale(0.98);
+}
+
+.buy-now-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  width: 246px;
+  padding: 15px 20px;
+
+  pointer-events: none;
+}
+
+.buy-now {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.submit-label {
+  font-family: "Palanquin", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fbfbfb;
+  letter-spacing: 0.5px;
+  transform: translateX(50px);
+}
+
+.confirm-order {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.submit-payement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Palanquin", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fbfbfb;
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: none;
+}
+
+.submit-payement:focus {
+  outline: none;
+}
+
+.submit-payement:empty::before {
+  content: "(0,00€)";
+  color: #fbfbfb;
 }

@@ -77,6 +77,7 @@ header {
   font-size: 48px;
   color: #e76c1f;
 }
+
 .h1 h1 {
   font-family: "Palanquin", sans-serif;
   font-weight: 700;
@@ -273,4 +274,12 @@ logo-copyright {
   top: 2px;
   left: 2px;
   display: flex;
+}
+
+.add-basket {
+  width: 99px;
+
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 }

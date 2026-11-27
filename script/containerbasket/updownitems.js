@@ -222,6 +222,7 @@ function increaseOrderBasket(ID, productType) {
     if (total_order !== null) {
         total_order.textContent = totalFormate;
     }
+    submitPayment(ID);
 
 }
 
@@ -530,36 +531,6 @@ function decreaseOrdertoBasket(ID, productType) {
     if (total_order !== null) {
         total_order.textContent = totalFormate;
     }
+    submitPayment(ID);
 }
 
-/*
-function SubtotalPricesBurgerBasket(ID) {
-
-    //let bn_check = document.getElementById('add-burger-' + index);
-    const amount = decreaseOrdertoBasket(ID);
-    console.log("Res2:", amount);
-    const price = getPriceFromBasket(ID);
-    const result = amount * price;
-    console.log(result)
-    return result;
-}
-
-
-function ToatalPricesBurgerBasket(ID) {
-    //const AmountBurgerIncrease = getAmountBurgerIncreaseFromBasket(ID)
-
-    let deliveryfee = "4,99€".replace("€", "").trim();
-    const deliveryfee_without_Euro = Number(deliveryfee.replace(",", "."));
-    deliveryfee = deliveryfee_without_Euro;
-    const total = SubtotalPricesBurgerBasket(ID) + deliveryfee;
-    return total;
-}
-
-/*
-    let price = getPriceFromBasket(ID);
-    let amount_price = amount * price
-    let deliveryfee = "4,99€".replace("€", "").trim();
-    const deliveryfee_without_Euro = Number(deliveryfee.replace(",", "."));
-    deliveryfee = deliveryfee_without_Euro;
-    const total = SubtotalPricesBurgerBasket(ID) + deliveryfee;
-*/

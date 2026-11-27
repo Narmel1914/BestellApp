@@ -16,7 +16,7 @@ function renderBurgerTemplate(ArrObj, index) {
             <div class="add-choice">
                     <button id="btn-add-burger-${index}" type="button" class="btn-icon btn-lg rounded-pill" aria-label="Add burger" onclick="getOrderBurger(${index})">
                        
-                        <i class="bi-plus" aria-hidden="true"></i>
+                        <i  class="add-basket"  aria-hidden="true"> Add to Basket</i>
                        
                     </button>
                 </div>
@@ -41,7 +41,7 @@ function renderPizzaTemplate(ArrObj, index) {
                 <div id="price">${Number(ArrObj.price).toFixed(2).replace(".", ",")} €</div>
             <div class="add-choice">
                     <button  id="btn-add-pizza-${index}" type="button"  class="btn-icon btn-lg rounded-pill" aria-label="Add pizza" onclick="getOrderPizza(${index})">
-                        <i class="bi-plus" aria-hidden="true"></i>
+                          <i  class="add-basket"  aria-hidden="true"> Add to Basket</i>
                     </button>
                 </div>
             </div> 
@@ -66,7 +66,7 @@ function renderSaladTemplate(ArrObj, index) {
             <div class="add-choice">
                     <button  id="btn-add-salad-${index}" type="button" class="btn-icon btn-lg rounded-pill" aria-label="Add Salad" onclick="getOrderSalad(${index})">
                       
-                        <i  class="bi bi-plus" aria-hidden="true"></i>
+                           <i  class="add-basket"  aria-hidden="true"> Add to Basket</i>
                   
                     </button>
                 </div>

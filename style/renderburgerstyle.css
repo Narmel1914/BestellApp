@@ -19,7 +19,6 @@
   border-radius: 5px;
   align-items: center;
   align-content: space-between;
-
   gap: 10px;
 }
 
@@ -27,7 +26,6 @@
   background-color: #fdeadc;
   display: flex;
   flex-direction: column;
-
   gap: 50px;
 }
 
@@ -47,7 +45,6 @@ button {
   cursor: pointer;
   color: black;
   background-color: white;
-  border: none;
   font-size: 24px;
   font-weight: 400;
 }
@@ -58,11 +55,11 @@ button {
   justify-content: space-between;
   gap: 150px;
 }
-
+/*
 .bi-plus::before {
   content: "\f4fe";
 }
-/*
+
 button {
   cursor: pointer;
   background-color: #fdeadc;
@@ -81,13 +78,13 @@ button {
   font-size: 16px;
   font-weight: bold;
 }
-
+/*
 [type="submit"]:not(:disabled),
 button:not(:disabled) {
   cursor: pointer;
-  background-color: #fdeadc;
-}
 
+}*/
+/*background-color: #fdeadc;*/
 #amount-buger-to-basket {
   display: none;
 }
